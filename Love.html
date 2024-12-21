@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programa de Pregunta "Quieres ser mi novia"</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    .message {
+      text-align: center;
+      margin-top: 100px;
+      font-size: 24px;
+    }
+    .animation {
+      text-align: center;
+      font-size: 48px;
+      animation: escape 5s linear infinite;
+    }
+    @keyframes escape {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(100vw); }
+    }
+  </style>
+</head>
+<body>
+  <div class="message">
+    <button onclick="showLoveMessage()">Sí Quiero</button>
+    <span class="animation">No quiero</span>
+  </div>
+
+  <script>
+    function showLoveMessage() {
+      var message = document.createElement("div");
+      message.innerText = "Lo sabía que ibas a aceptar, ahora ya somos novios. Te amo. 😍❤️";
+      message.style.textAlign = "center";
+      message.style.fontSize = "24px";
+      message.style.marginTop = "50px";
+      document.body.appendChild(message);
+    }
+  </script>
+</body>
+</html>
